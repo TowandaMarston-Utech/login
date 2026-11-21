@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portal Login | St. Jago High School</title>
+    <link rel="icon" type="image/png" href="../assets/images/st-jago-crest.png">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+    <!--HEADER-->
+    <header>
+        <div class="school-brand">
+            <img src="../assets/images/st-jago-crest.png"
+            alt="St. Jago High School crest">
+
+            <div>
+                <h1>St. Jago High School</h1>
+                <p>Student Portal</p>
+            </div>
+        </div>
+    </header>
+
+<!--NAVIGATION-->
+<nav>
+
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html">Login</a>
+
+</nav>
+
+<!--MAIN CONTENT-->
+<main>
+    <section class="page-heading">
+        <h1>Portal Login</h1>
+        <p>
+            Welcome to the St. Jago High School Student Portal. Enter your account details to continue.
+        </p>
+    </section>
+
+    <!--LOGIN FORM-->
+
+    <section id="login-section">
+        <h2>Sign In</h2>
+        <form id="loginForm">
+            
+            <label for="userRole">Select Account Type</label>
+            <select id="userRole" name="userRole" required>
+                <option value="">Choose your account type</option>
+                <option value="admin">Administration</option>
+                <option value="teacher">Teacher</option>
+                <option value="viewer">General Authorized Viewer</option>
+            </select>
+
+            <label for="username">Username</label>
+
+            <input type="text"
+                   id="username"
+                   name="username"
+                   placeholder="Enter your username"
+                   required>
+            
+            <label for="password">Password</label>
+
+            <input type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Enter Your Password"
+                    required>
+
+            <button type="submit">
+                Login
+            </button>
+
+        </form>
+
+        <p id="loginMessage"></p>
+
+        <p>
+            Need Assistance?
+            <a href="contact.html">Contact the school</a>
+        </p>
+
+    </section>
+
+</main>
+
+<!--FOOTER-->
+<footer>
+
+    <p>
+        &copy; 2026 St. Jago High School Student Portal. All Rights Reserved.
+    </p>
+</footer>
+
+<!--JAVASCRIPT-->
+
+<script src="../login.js"></script>
+
+
+</body>
+
+</html>
